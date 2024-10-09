@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bike Sales Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>Oluwatosin</strong> <span>Portfolio</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="generic.html">About</a></li>
+						<li><a href="landing.html">Healthcare Project</a></li>
+						<li><a href="landing2.html">Spotify Music Clustering</a></li>
+						<li><a href="landing3.html">Superstore Sales Analysis</a></li>
+						<li><a href="landing4.html">Social Media Growth</a></li>
+						<li><a href="landing5.html">Web Scraping</a></li>
+						<li><a href="landing6.html">Bike Sales Analysis</a></li>
+                        <li><a href="landing7.html">Instagram Clone</a></li>
+						<!--<li><a href="elements.html">Elements</a></li> -->
+					</ul>
+				</nav>
+
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/bike.png" alt="" />
+							</span>
+							<header class="major">
+								<h1>Bike Sales Analysis</h1>
+							</header>
+							<div class="content">
+								<p>Role: Data Analyst | Tools: R, Excel | Project Type: Exploratory Data Analysis | Objective: Identify rider behavior trends to enhance membership conversion strategy. <br /></p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Introduction</h2>
+									</header>
+									<p>
+										Cyclistic, a bike-share company in Chicago, offers both casual rides and annual memberships. While casual riders have shown steady growth, the company wants to better understand how to convert these riders into long-term members. This challenge lies at the core of Cyclistic’s strategic business problem.
+
+										As part of my Google Data Analytics Capstone, I took on the task of analyzing the available data to unearth patterns in rider behavior that would help Cyclistic transition casual riders into loyal, recurring members. The project required exploratory data analysis (EDA) on over 12 months of bike-sharing data to provide actionable insights.                                    <header class="minor">
+                                        <h2>Inspiration</h2>
+                                    </header>  
+									<p>
+                                        Cyclistic's story piqued my interest because it's a classic case of customer conversion. The challenge was not just in understanding how riders use the service but also how these behaviors could lead to effective marketing strategies. I was motivated to dive deep into this data because it would require transforming raw usage data into clear business insights—essentially turning numbers into a story that could drive growth. The idea of blending data analytics with real-world business challenges made this project incredibly exciting.
+
+                                    <header class="minor">
+                                            <h2>Business Problem</h2>
+                                    </header>
+									<p>
+    
+                                    	Cyclistic offers two key types of users: casual riders and annual members. The main question Cyclistic aims to answer is, "How can we convert more casual riders into annual members?" This meant understanding how these two groups behave differently, what factors influence their ride frequency, and ultimately, what makes casual riders return. The goal was to uncover these differences and recommend actionable strategies for customer retention and conversion.
+                                        
+                                    <header class="minor">
+                                            <h2>Data Preparation</h2>
+                                    </header>
+									<p>
+										The dataset included a wealth of trip data from the Cyclistic bike-share system, covering ride start and end times, durations, and user types. Before diving into analysis, I preprocessed the data using R to ensure it was clean and ready for exploration. Here are the steps taken:<br />
+
+										1.	Data cleaning: Removed duplicates and irrelevant data points. <br />
+										2.	Formatting: Standardized date formats and created new variables (e.g., day of the week, ride duration).<br />
+										3.	Segmentation: Separated the data into two user types: casual riders and annual members.
+                                    <header class="minor">
+                                            <h2>Exploratory Data Analysis</h2>
+                                    </header>
+									<p>
+										This was the heart of the project—understanding rider behavior. I focused on identifying key patterns that distinguished casual riders from annual members.<br />
+
+										1.	Ride Duration and Frequency:
+										Casual riders tend to take longer rides but use the service less frequently compared to annual members. The peak usage times for casual riders are often during weekends, whereas annual members show consistent usage throughout the week.<br />
+										
+										2.	Seasonality Impact:
+										There was a clear seasonal trend in ride usage. Casual riders spike during summer, suggesting they are likely tourists or leisure users. On the other hand, annual members use bikes year-round, indicating a potential for daily commuting or habitual usage.<br />
+										
+										3.	Day of the Week Analysis:
+										Weekdays are dominated by annual members, while weekends see a surge in casual rider activity. This insight is crucial for targeting marketing efforts, as weekend promotions could specifically address casual users.<br />
+										
+										4.	Popular Routes:
+										Casual riders tend to favor routes near tourist attractions and downtown areas, while annual members follow routes that likely correlate with daily commutes. Understanding these routes offers an opportunity to tailor promotions based on location.
+										
+									
+                                    <header class="minor">
+                                            <h2>Visualization and Insights</h2>
+                                    </header>
+									<p>
+                                        
+										Using R, I visualized key findings, creating charts that showcased the differences between user types. Here are the most impactful insights:<br />
+
+										1.	Rider Type by Day of the Week:
+										Casual riders predominantly ride on weekends, while annual members have a more balanced distribution throughout the week.<br />
+										
+										2.	Average Ride Duration:
+										Casual riders take longer trips on average, but they ride less frequently. This insight highlighted the need to create incentives that encourage casual riders to use the service more regularly.<br />
+										
+										3.	Ride Trends by Season:
+										A noticeable spike in casual rider activity during warmer months confirmed that seasonality plays a significant role in casual rider behavior. Marketing campaigns could be ramped up during summer to maximize this trend.
+										
+									<header class="minor">
+                                            <h2>Key Recommendations</h2>
+                                    </header>
+									<p>
+                                        
+										Based on the analysis, I proposed several data-driven strategies for Cyclistic to increase annual memberships:<br />
+
+										1.	Targeted Weekend Promotions:
+										Since casual riders primarily use bikes on weekends, promotional campaigns offering discounts for membership during weekend rides could capture their attention.<br />
+
+										2.	Incentivizing Frequent Rides:
+										Creating a reward system that offers casual riders incentives for repeat usage, such as discounts after a certain number of rides, could encourage more frequent usage and lead to membership sign-ups.<br />
+
+										3.	Seasonal Marketing:
+										Peak casual rider activity occurs in the summer, suggesting that marketing efforts should be intensified during these months. Offering summer-specific deals could encourage casual users to consider annual membership for year-round access.<br />
+
+										4.	Location-Based Promotions:
+										Casual riders often stick to popular tourist routes. Placing marketing materials or running geo-targeted ads in these areas could convert tourists or occasional users into more frequent riders.
+																		
+                                        
+								</div>
+							</section>
+
+						<!-- Two
+							<section id="two" class="spotlights">
+								<section>
+									<a href="https://public.tableau.com/app/profile/babalolatosin/viz/SuperstoreDashboard2_17169594790150/Dashboard1" class="image">
+										<img src="images/superstore_dash.png" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Dashboard</h3>
+											</header>
+											<p>This dashboard effectively captures the overall business performance by focusing on key areas:<br />
+
+												1.	Sales Growth<br />
+												2.	Customer Segments<br />
+												3.	Geographic Performance
+											</p>
+											<ul class="actions">
+												<li><a href="https://public.tableau.com/app/profile/babalolatosin/viz/SuperstoreDashboard2_17169594790150/Dashboard1" class="button">Learn more</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>  -->
+								
+						</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Conclusion</h2>
+									</header>
+									<p>This project underscored the importance of understanding customer segmentation to drive business growth. By identifying the clear differences between casual riders and annual members, Cyclistic can now focus its marketing efforts on converting these casual users into loyal, annual subscribers. Through data, I was able to craft a compelling narrative that not only provided answers but also actionable strategies to improve Cyclistic’s membership conversion rates.
+
+										This experience gave me valuable insights into the intersection of data analytics and business strategy, solidifying my ability to uncover stories within the numbers and translate them into practical solutions.</p>
+									<ul class="actions">
+										<li><a href="https://github.com/OluwatosinExcel/Cyclistic-Bike-Share-Project" class="button next">View More</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</div>
+
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="babalolatosinxcel@gmail.com">babalolatosinxcel@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(234) 91-3225-8947</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Oyo state,<br />
+										Nigeria</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="linkedin.com/in/babalolatosin" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/OluwatosinExcel" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://x.com/Tech_sis29" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.instagram.com/techsis1?igsh=dW5jNHlycGh4NDBh&utm_source=qr" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>								
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
